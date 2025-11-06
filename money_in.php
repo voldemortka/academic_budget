@@ -90,7 +90,7 @@
         <main>
             <form action='money_in.php' method='post'>
                 <h2 class="almendra">How much money have you just earned?</h2>
-                <input type="number" min=0 name="money" value=0 placeholder='type here the amount of money' style='width: 30vw; margin-bottom: 5vh;'>
+                <input type="number" step="0.01" min=0 name="money" value=0 placeholder='type here the amount of money' style='width: 30vw; margin-bottom: 5vh;'>
 
                 <h2 class="almendra">Select the account</h2>
 
@@ -117,4 +117,5 @@
             </form>
         </main>
     </body>
+
 </html>
