@@ -51,7 +51,7 @@
         <main>
             <h1 class="almendra">Transmit your money from one account to another</h1>
             <form action="trans.php" method='post'>
-                <label>How much money? <input type='number' name='money'></label>
+                <label>How much money? <input type='number' step="0.01" name='money'></label>
                 <h2 class="almendra">Transfer your money from:</h2>
                 <fieldset>
                     <?php
@@ -88,4 +88,5 @@
             </form>
         </main>
     </body>
+
 </html>
