@@ -77,7 +77,7 @@
         <main>
             <form action='money_out.php' method='post'>
                 <h2 class="almendra">How much money have you just spent? Admit here</h2>
-                <input type="number" min=0 name="money" value=0 placeholder='type here the amount of money' style='width: 30vw; margin-bottom: 5vh;'>
+                <input type="number" step="0.01" min=0 name="money" value=0 placeholder='type here the amount of money' style='width: 30vw; margin-bottom: 5vh;'>
 
                 <h2 class="almendra">And tell me, what was the categorie?</h2>
 
@@ -129,4 +129,5 @@
             </form>
                 </main>
     </body>
+
 </html>
