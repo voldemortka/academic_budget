@@ -25,8 +25,8 @@
             pg_query($conn, $sql);
             //   echo $row[0]."  ---  ".$row['id'];
             setcookie("AB_id", $id, time() + $time, "/");
-            if(!isset($_COOKIE['AB_id'])) echo "chuj 1";
-            if(!isset($_COOKIE['AB_name'])) echo "chuj 2";
+          //  if(!isset($_COOKIE['AB_id'])) echo "chuj 1";
+          //  if(!isset($_COOKIE['AB_name'])) echo "chuj 2";
             header('Location: index.php');
         }
     }
@@ -70,4 +70,5 @@
 
 </main>
     </body>
+
 </html>
