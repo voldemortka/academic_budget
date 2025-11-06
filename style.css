@@ -147,4 +147,26 @@ fieldset{
     margin: 3vh auto 5vh 5vw;
     letter-spacing: 1px;
     border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .nav_cont{
+        background-color: var(--bg);
+        z-index: 10px;
+        width: 55vw;
+        font-size: 85%;
+        border-right: 1px dotted var(--sec);
+    }
+
+    .home_button{
+        left: 10vw;
+    }
 }
