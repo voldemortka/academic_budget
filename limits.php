@@ -12,9 +12,11 @@
         $sql = "select name, lim from categories where acc=".$id;
         $result = pg_query($conn, $sql);
         while($row = pg_fetch_assoc($result)){
-            $diver = $_POST[$row['name']] - $row['lim'];
-            $sql = "update categories set lim = ".$_POST[$row['name']].", curr_money=curr_money+".$diver."  where acc=".$id." and name='".$row['name']."'";
-            pg_query($conn, $sql);
+            if(isset($_POST[$row['name']])){
+                $diver = $_POST[$row['name']] - $row['lim'];
+                $sql = "update categories set lim = ".$_POST[$row['name']].", curr_money=curr_money+".$diver."  where acc=".$id." and name='".$row['name']."'";
+                pg_query($conn, $sql);
+            }
         }
     }
 
@@ -79,4 +81,5 @@
     </body>
 
 </html>
+
 
