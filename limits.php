@@ -65,7 +65,7 @@
                                 <div class='list_pos catli'>
                                     <i class='chosen_icon icon-".$row['icon']."'></i>
                                     <p class='name_categorie'>".$row['name']."</p>
-                                    <input type='number' step="0.01" name='".$row['name']."' value=".$row['lim'].">
+                                    <input type='number' step='0.01' name='".$row['name']."' value=".$row['lim'].">
                                 </div>
                             ";
                         }
@@ -79,3 +79,4 @@
     </body>
 
 </html>
+
