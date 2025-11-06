@@ -55,7 +55,7 @@
             <section style="margn-top: 3vh; display: block;">
 
                 <?php
-                    $sql = "select expenses.inout, expenses.value, banks.name as bank, expenses.notes, TO_CHAR(expenses.created_at, 'DD-MM-YYYY') AS data from expenses inner join banks on expenses.bank=banks.id where expenses.acc=".$id." order by data desc";
+                    $sql = "select expenses.inout, expenses.value, banks.name as bank, expenses.notes, TO_CHAR(expenses.created_at, 'DD-MM-YYYY') AS data from expenses inner join banks on expenses.bank=banks.id where expenses.acc=".$id." order by data";
                     $result = pg_query($conn, $sql);
                     if(pg_num_rows($result)==0) echo "You have no expesces or incomes yet"; else{
                         while( $row = pg_fetch_assoc($result) ){
@@ -79,4 +79,5 @@
         </main>
         
     </body>
+
 </html>
