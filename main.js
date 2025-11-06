@@ -1,0 +1,22 @@
+function nav_clicked(){
+    if ($('.nav_cont').length){
+        $('.nav_cont').remove();
+        $('main').css('width', '90vw');
+    }
+    else {
+        $('body').append(`
+            <nav class="nav_cont">
+                <a href="money_out.php" class="select_action_main butt">I spent money...</a>
+                <a href="money_in.php" class="select_action_main butt">New moneyyyy!!</a>
+                <a href="list.php" class="select_action_main butt">The list of categories and money</a>
+                <a href="inout.php" class="select_action_main butt">The list of incomes and expences</a>
+                <a href="categories.php" class="select_action_main butt">Adjust categories</a>
+                <a href="limits.php" class="select_action_main butt">Adjust limits</a>
+                <a href="banks.php" class="select_action_main butt">Adjust bank accounts</a>
+                <a href="trans.php" class="select_action_main butt">Transfer</a>
+                <button onclick="logout()" class="spectral butt2">log out</button>
+            </nav>
+        `); 
+        $('main').css('width', '75vw');
+    }
+}
